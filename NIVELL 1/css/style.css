@@ -159,3 +159,85 @@
         margin: 0px 20px 20px 20px;
     }
 }
+
+
+/******************************* VERSIÓ MOBILE ---> 480px ***********************************/
+
+@media screen and (max-width: 480px) {
+
+    #container-header {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: black;
+        margin: 25px;
+        gap: 15px;
+    }
+
+    .container1 {
+        flex-direction: column;
+    }
+
+    .item1 {
+        margin: 15px;
+        flex: 0 1 100%;
+
+    }
+
+    .item2 {
+        margin: 0 15px;
+        flex: 0 1 100%;
+
+    }
+
+    .item3 {
+        margin: 15px;
+        flex: 0 1 100%;
+
+    }
+
+    .item4 {
+        margin: 15px;
+    }
+
+    #container-section {
+        flex-wrap: wrap;
+        background-color: rgb(255, 217, 0);
+    }
+
+    .container-section1 {
+        flex-basis: 100%;
+        margin: 20px;
+        background-color: #1D3557;
+    }
+
+    .item_1,
+    .item_2,
+    .item_3,
+    .item_4 {
+        margin: 20px 20px 0;
+        flex: 100%;
+        background-color: #5590B4;
+    }
+
+    .item_5 {
+        background-color: #A8DADC;
+    }
+
+    .container-section2 {
+        flex-basis: 100%;
+        margin: 0 20px 20px;
+        background-color: #FF521B;
+    }
+
+    .item_6 {
+        background-color: #FAB038;
+        margin: 20px 20px 5px;
+    }
+
+    .item_7 {
+        background-color: #FAB038;
+
+        margin: 5px 20px 20px;
+    }
+}
+
