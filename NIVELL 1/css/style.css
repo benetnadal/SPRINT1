@@ -1,4 +1,4 @@
-/********************************************HEADER*********************************************/
+/********************************************HEADER****************************************/
 
 #container-header {
     display: flex;
@@ -133,4 +133,29 @@
     margin: 20px;
     padding: 10px;
     flex: auto;
+}
+
+
+
+/************************************** RESPONSIVE STYLES ***************************************/
+
+/***************************************VERSIÓ TABLET ---> 768px ******************************/
+
+@media screen and (max-width: 768px) {
+    #container-section {
+        flex-wrap: wrap;
+        background-color: yellow;
+    }
+
+    .container-section1 {
+        margin: 20px;
+    }
+
+    .container-section2 {
+        margin: 0px 20px 20px 20px;
+    }
+
+    .item_7 {
+        margin: 0px 20px 20px 20px;
+    }
 }
