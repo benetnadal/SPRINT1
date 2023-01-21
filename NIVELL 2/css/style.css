@@ -1,0 +1,185 @@
+/********************************************HEADER*********************************************/
+
+#container-header {
+    display: flex;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    margin: 25px 25px 5px;
+    background-image: url(../images/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container1 {
+    flex-wrap: nowrap;
+    display: flex;
+    margin: 20px 20px 60px;
+    flex: 1 1 auto;
+}
+
+.container2 {
+    flex-wrap: nowrap;
+    display: flex;
+    margin: 50px 20px 0px;
+    flex: 1 1 1000px;
+}
+
+.item1 {
+    margin: 20px;
+    padding: 10px;
+    flex: 2 0 auto;
+}
+
+.item2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(103, 102, 102);
+    padding: 10px;
+    margin: 20px 0;
+    flex: 8 0 auto;
+}
+
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(103, 102, 102);
+}
+
+a:hover {
+    color: #EB4758;
+}
+
+.item3 {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: center;
+    color: rgb(103, 102, 102);
+    padding: 10px;
+    margin: 20px;
+    flex: 2 0 auto;
+}
+
+.item4 {
+    display: flex;
+    padding: 20px 20px 40px;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    margin: 0px 40px 0;
+    justify-content: center;
+    font-size: 24px;
+    color: rgb(238, 129, 137, 0.7);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    background-color: #F29391;
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 5px;
+    font-size: medium;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.item4 p {
+    font-family: 'Noto Serif Toto', serif;
+}
+
+/************************ RESPONSIVE STYLES ***************************************/
+
+/***************************************VERSIÓ TABLET ---> 768px ******************************/
+
+@media screen and (max-width: 768px) {
+    .item1 {
+        margin: 20px 0px;
+        padding: 0;
+        text-align: end;
+    }
+
+    .item2 {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .item2 p {
+        font-size: small;
+        flex: 1 1 30%;
+        text-align: center;
+    }
+
+    .item3 {
+        margin: 20px 0px;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .item4 {
+        padding: 20px 20px 40px;
+        font-size: 20px;
+
+    }
+
+    .item4 p {
+        margin: 12px 0px 0px;
+
+    }
+}
+
+/******************************* VERSIÓ MOBILE ---> 480px ***********************************/
+
+@media screen and (max-width: 480px) {
+
+    #container-header {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 25px 25px 0px;
+        gap: 15px;
+        background-size: cover;
+    }
+
+    .container1 {
+        margin-top: 2px;
+        flex-direction: column;
+    }
+
+    .item1 {
+        margin: 15px;
+        flex: 0 1 100%;
+        text-align: center;
+    }
+
+    .item2 {
+        margin: 0;
+        flex: 0 1 100%;
+        justify-content: space-around;
+        font-size: small;
+        text-align: center;
+    }
+
+    .item3 {
+        margin: 0 15px;
+        padding: 0;
+        flex: 0 1 100%;
+        justify-content: center;
+    }
+
+
+
+    .item4 {
+        margin: 10px 5px 0px;
+        padding: 10px 20px 20px;
+
+    }
+
+    .item4 p {
+        font-size: 17px;
+    }
+}
